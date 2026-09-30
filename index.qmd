@@ -1,0 +1,416 @@
+---
+title: "Article Notes: The Two-Step Approach to Structural Equation Modeling"
+author: "Kevin Bachez"
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+    embed-resources: true
+---
+
+# Introduction
+
+- Structural equation modeling (SEM) is widely used in psychology and the social sciences because it allows researchers to evaluate and modify theoretical models.
+
+- Anderson and Gerbing explain that although SEM has strong potential for theory development, its complexity can also create problems when researchers do not apply it carefully.
+
+- The main purpose of the article is to provide practical guidance for using SEM in theory testing and development.
+
+- The authors recommend a two-step modeling approach that separates the evaluation of the measurement model from the evaluation of the structural model.
+
+- The measurement model explains how observed measures relate to their underlying latent constructs.
+
+- The structural model explains the hypothesized relationships among the latent constructs.
+
+- The authors argue that the measurement model should be evaluated and, if necessary, respecified before the measurement and structural components are estimated together.
+
+- This separation helps researchers make more meaningful conclusions about theoretical constructs and reduces the possibility of misleading interpretations.
+
+- The measurement model is especially important for evaluating convergent validity and discriminant validity.
+
+- After acceptable measurement has been established, the structural model can be used to evaluate the hypothesized relationships among constructs and provide evidence related to nomological validity.
+
+# Background
+
+## Exploratory Versus Confirmatory Analyses
+
+- Anderson and Gerbing explain that exploratory and confirmatory analysis should not always be treated as completely separate categories.
+
+- Instead, research can be viewed as moving along a progression from more exploratory analysis toward more confirmatory analysis.
+
+- In exploratory factor analysis, researchers may begin without specifying the number of factors in advance.
+
+- The analysis becomes more confirmatory when researchers specify the expected number of factors and evaluate how well that factor structure fits the data.
+
+- In confirmatory factor analysis, researchers specify the measurement model in advance, including which observed variables are expected to measure particular latent constructs.
+
+- Even a confirmatory model may require respecification when the initial model does not fit the data adequately.
+
+- Because researchers often revise and reestimate models using the same sample, the process is not always purely confirmatory.
+
+- A stronger confirmatory test occurs when the final model is cross-validated using a different sample from the same population.
+
+- Cross-validation provides stronger evidence that the final model is not simply fitting characteristics that are unique to the original sample.
+
+## Complementary Approaches for Theory Testing Versus Predictive Application
+
+- The authors distinguish between using SEM for theory testing and development and using SEM for prediction.
+
+- For theory testing and development, they discuss full-information estimation methods such as maximum likelihood (ML) and generalized least squares (GLS).
+
+- ML and GLS are used with the common factor model, which separates theoretically meaningful construct variance from random measurement error and measure-specific variance.
+
+- Full-information methods are useful for theory testing because they provide efficient parameter estimates and an overall test of model fit.
+
+- For predictive applications, the authors discuss partial least squares (PLS).
+
+- PLS focuses more heavily on maximizing explained variance and predicting scores than on testing a complete theoretical model.
+
+- A limitation of PLS is that it does not directly assess unidimensional measurement in the same way as the confirmatory factor-analysis approach.
+
+- PLS also does not provide an overall test of model fit.
+
+- The authors therefore describe the approaches as complementary rather than competing.
+
+- Their general position is that ML or GLS is more appropriate for theory testing and development, while PLS can be more useful for prediction and application.
+
+- Because the article focuses on theory testing and development, the remainder of the article emphasizes a confirmatory two-step approach using ML or GLS.
+
+## Estimation Methods
+
+- Maximum likelihood (ML) had become the most commonly used estimation method in structural equation modeling.
+
+- Under the assumption of multivariate normality, ML estimators have desirable large-sample properties, including being unbiased, consistent, and efficient.
+
+- ML also allows researchers to test the statistical significance of individual parameters and evaluate overall model fit using the chi-square statistic.
+
+- A limitation of normal-theory ML is that its standard errors and chi-square test can be affected when the data violate the assumption of multivariate normality.
+
+- Because of these limitations, researchers developed more general estimation approaches that relax the normality assumption.
+
+- Generalized least squares (GLS) methods estimate model parameters by minimizing a weighted function of the differences between observed and model-predicted covariances.
+
+- Different GLS methods can be created depending on how the weighting matrix is specified.
+
+- Asymptotically distribution-free (ADF) methods were developed to provide estimates that do not require the assumption of multivariate normality.
+
+- ADF methods are more flexible, but they can require very large samples and much greater computational resources.
+
+- The article also discusses approximation methods designed to reduce the computational burden of full ADF estimation, including linearized estimation and diagonally weighted least squares.
+
+- Elliptical estimation provides another alternative by allowing variables to have a shared nonzero kurtosis rather than requiring strict multivariate normality.
+
+- The authors note that these newer estimation methods were important theoretical advances, but they also involved practical trade-offs related to sample size and computation.
+
+- The choice of estimation method should depend on the characteristics of the data and the assumptions that can reasonably be made.
+
+- The authors suggest that researchers should evaluate whether multivariate normality is reasonable before choosing between normal-theory and more general estimation methods.
+
+# Confirmatory Measurement Model
+
+- A confirmatory measurement model specifies the relationships between observed variables and the latent constructs they are intended to measure.
+
+- In this model, the latent constructs are allowed to correlate freely with one another.
+
+- The observed measures are connected to the latent constructs through factor loadings.
+
+- The model also includes measurement error and variance that is specific to individual measures.
+
+- The purpose of the confirmatory measurement model is to evaluate whether the observed indicators represent the intended theoretical constructs in an acceptable way.
+
+- Anderson and Gerbing treat the measurement model as a separate part of the SEM process because researchers need to establish adequate measurement before interpreting structural relationships among constructs.
+
+## Need for Unidimensional Measurement
+
+- Anderson and Gerbing describe unidimensional measurement as an important requirement for theory testing and development.
+
+- Unidimensionality means that a set of indicators has one underlying trait or construct in common.
+
+- Establishing unidimensionality is necessary before researchers can assign a clear theoretical meaning to an estimated latent construct.
+
+- The authors discuss two criteria for evaluating unidimensionality: internal consistency and external consistency.
+
+- Internal consistency refers to whether indicators of the same construct relate to one another in a way that is consistent with a single underlying factor.
+
+- External consistency concerns whether the relationships between indicators of one construct and indicators of another construct are consistent with the proposed measurement structure.
+
+- Multiple-indicator measurement models are preferred because they allow constructs to be defined by more than one observed measure.
+
+- In a preferred multiple-indicator model, each indicator is intended to measure only one construct.
+
+- When indicators load on several constructs or when correlated measurement errors are introduced, the measures are no longer clearly unidimensional.
+
+- Losing unidimensionality can make it harder to interpret the theoretical meaning of the latent constructs.
+
+- The authors recognize that some individual items may be more complex than a simple one-factor representation suggests.
+
+- They note that higher-order factors or composites can sometimes be used when the constructs of interest are broader than the first-order factors represented by individual items.
+
+## Specification
+
+- The authors explain that the measurement model must be properly specified before researchers can meaningfully evaluate its fit.
+
+- One important specification decision is how to set the metric, or scale, of the latent factors.
+
+- Anderson and Gerbing recommend fixing the factor variances to 1.0 rather than fixing one factor loading per construct to 1.0.
+
+- Setting factor variances to 1.0 allows researchers to test whether each factor loading is statistically significant.
+
+- The authors strongly prefer using multiple indicators for each latent construct whenever possible.
+
+- In some cases, however, researchers may have only one indicator for a construct.
+
+- When a construct has only a single indicator, researchers must make assumptions about the indicator’s measurement error because the error cannot be estimated in the same way as it can with multiple indicators.
+
+- Ideally, the error variance for a single indicator should come from prior research or another independent source.
+
+- If no independent estimate is available, the researcher must make a judgment about the error variance, although the authors note that this introduces some arbitrariness.
+
+- Sample size is also an important part of model specification and estimation.
+
+- The authors report that relatively small samples can sometimes produce unbiased parameter estimates, but estimates may still be too unstable for practical interpretation.
+
+- They note that sample sizes around 150 or more are often needed to obtain parameter estimates with sufficiently small standard errors for practical use.
+
+- Smaller samples are more likely to produce nonconvergence or improper solutions.
+
+- Models with only two indicators per factor can be especially difficult and may require larger samples.
+
+- More complex estimation methods, such as asymptotically distribution-free methods, may require much larger sample sizes than normal-theory maximum likelihood estimation.
+
+## Assessment of Fit
+
+- After estimating the measurement model, researchers should evaluate how well the model fits the observed data.
+
+- Anderson and Gerbing discuss several goodness-of-fit measures, including the chi-square likelihood ratio test, the goodness-of-fit index, and the root-mean-square residual.
+
+- Overall fit statistics help researchers determine whether the proposed measurement model provides an acceptable representation of the data.
+
+- Convergent validity can be evaluated by examining whether each indicator has a statistically significant factor loading on its intended construct.
+
+- A significant factor loading suggests that the indicator is meaningfully related to the construct it is supposed to measure.
+
+- Discriminant validity concerns whether two constructs are sufficiently distinct from one another.
+
+- The authors describe a chi-square difference test in which the correlation between two constructs is constrained to 1.0 and compared with a model in which the correlation is freely estimated.
+
+- If the unconstrained model fits significantly better, this supports the conclusion that the two constructs are not perfectly correlated and therefore show discriminant validity.
+
+- A second way to assess discriminant validity is to examine whether the confidence interval around the estimated correlation between two constructs includes 1.0.
+
+- The authors recommend evaluating pairs of constructs individually rather than testing many pairs simultaneously because problems involving one pair could otherwise be hidden by stronger results from other pairs.
+
+## Respecification
+
+- Anderson and Gerbing recognize that measurement models often need to be respecified when the initial model does not fit adequately.
+
+- Respecification should not be based only on statistical results.
+
+- Researchers should also rely on theory and the substantive meaning of the constructs when deciding how to modify a model.
+
+- Using theory helps reduce the number of alternative models that need to be considered and reduces the risk of changing a model only to take advantage of random characteristics of the sample.
+
+- Nonconvergence and improper solutions may indicate problems with the model specification or characteristics of the sample.
+
+- Possible respecification strategies include assigning an indicator to a different factor or removing a problematic indicator.
+
+- The authors identify four basic ways to modify indicators: move an indicator to another factor, remove it, allow it to load on multiple factors, or correlate measurement errors.
+
+- The first two options are generally preferred because they can preserve unidimensional measurement.
+
+- Allowing cross-loadings or correlated measurement errors may improve statistical fit but can reduce interpretability and theoretical meaning.
+
+- Correlated measurement errors should generally be specified only when there is a clear theoretical reason for expecting them.
+
+- Residual patterns can help identify indicators that may be incorrectly assigned or multidimensional.
+
+- The authors recommend combining statistical information, residual analysis, and substantive theory when making respecification decisions.
+
+- A model may sometimes be judged acceptable even when the chi-square statistic remains significant, particularly when other fit indices and residual patterns indicate reasonable fit.
+
+# One-Step Versus Two-Step Modeling Approaches
+
+- The central argument of the article is that researchers gain important advantages by evaluating and respecifying the measurement model before estimating the measurement and structural models together.
+
+- A one-step approach estimates the measurement and structural components simultaneously.
+
+- A two-step approach first evaluates the adequacy of the measurement model and then evaluates the hypothesized structural relationships.
+
+- Separating the two stages allows researchers to determine more clearly whether poor model fit comes from measurement problems or from the proposed structural relationships.
+
+- The two-step approach also reduces the possibility that good fit in one part of the model will hide poor fit in another part.
+
+## The Confirmatory Structural Model
+
+- The confirmatory structural model represents the hypothesized relationships among latent constructs.
+
+- Unlike the measurement model, which focuses on relationships between indicators and constructs, the structural model focuses on relationships among the constructs themselves.
+
+- Structural models distinguish between endogenous and exogenous constructs.
+
+- Endogenous constructs have their causes represented within the model.
+
+- Exogenous constructs have causes that lie outside the model and are not the main focus of the analysis.
+
+- The structural component and the measurement components can be estimated simultaneously once acceptable measurement has been established.
+
+- One major concern with estimating everything at once is interpretational confounding.
+
+- Interpretational confounding occurs when the empirical meaning of a latent construct changes depending on how the structural relationships are specified.
+
+- This can be observed when factor-loading estimates change substantially across different structural models.
+
+- Estimating the measurement model separately first reduces the possibility of interpretational confounding.
+
+- If unidimensional measurement has been established, factor loadings should change very little when alternative structural models are estimated.
+
+## Recommended Two-Step Modeling Approach
+
+### Step 1: Evaluate the Measurement Model
+
+- The first step is to estimate and evaluate the confirmatory measurement model.
+
+- The measurement model examines how observed indicators relate to the latent constructs they are intended to measure.
+
+- Researchers first determine whether the indicators provide acceptable measurement of the constructs before examining the hypothesized structural relationships.
+
+- This step allows researchers to assess unidimensionality, convergent validity, and discriminant validity.
+
+- Convergent validity concerns whether indicators that are intended to measure the same construct are actually strongly related to that construct.
+
+- Discriminant validity concerns whether theoretically different constructs are empirically distinguishable from one another.
+
+- If the measurement model does not fit adequately, the researcher should investigate the source of the problem and consider theoretically justified respecification.
+
+- Establishing an acceptable measurement model gives researchers greater confidence that the latent constructs have clear and stable meanings.
+
+### Step 2: Evaluate the Structural Model
+
+- Once an acceptable measurement model has been established, the second step is to evaluate the structural model.
+
+- The structural model represents the hypothesized relationships among the latent constructs.
+
+- Researchers can then determine whether the theoretical relationships among constructs are consistent with the observed data.
+
+- Because measurement quality has already been evaluated, researchers can more clearly identify whether poor structural-model fit results from the hypothesized relationships rather than from measurement problems.
+
+- Evaluation of the structural model also contributes to the assessment of nomological validity.
+
+- Nomological validity concerns whether constructs relate to one another in ways that are consistent with the broader theoretical framework.
+
+### Nested Models and Chi-Square Difference Testing
+
+- Anderson and Gerbing recommend comparing a series of nested structural models.
+
+- Nested models are models in which one model contains additional restrictions on parameters that are freely estimated in another model.
+
+- The authors describe five structural models ranging from a null model with no structural relationships to a saturated model in which all relationships among constructs are estimated.
+
+- The researcher’s theoretical model lies between these extremes and can be compared with theoretically plausible alternatives.
+
+- Sequential chi-square difference tests are used to determine whether adding or removing structural relationships significantly changes model fit.
+
+- These comparisons allow researchers to evaluate not only whether the proposed theoretical model fits but also whether alternative models provide a better or more parsimonious explanation.
+
+### Why the Two Steps Are Separated
+
+- Separating measurement from structural analysis helps researchers identify the source of model-fit problems.
+
+- If no structural model could provide acceptable fit, the problem may indicate a more fundamental misspecification of the measurement model.
+
+- With a one-step approach, researchers may not be able to identify whether poor fit originates in measurement or structural relationships.
+
+- Evaluating the measurement model first also reduces interpretational confounding.
+
+- The two-step approach provides a clearer basis for testing theoretical relationships because researchers know that the constructs have already demonstrated acceptable measurement properties.
+
+## Advantages of the Two-Step Approach
+
+- One major advantage of the two-step approach is that it separates measurement problems from structural-model problems.
+
+- Researchers can determine whether poor overall fit is caused by inadequate measurement or by incorrect hypothesized relationships among constructs.
+
+- The approach reduces interpretational confounding because the meaning of the latent constructs is established before structural restrictions are imposed.
+
+- It allows researchers to evaluate convergent and discriminant validity before testing nomological validity.
+
+- The two-step approach supports formal comparisons among the theoretical model and plausible alternative structural models.
+
+- Comparing nested models helps researchers evaluate whether additional structural paths meaningfully improve explanation.
+
+- The approach encourages researchers to consider parsimony by preferring a simpler model when additional parameters do not provide meaningful improvement.
+
+- Paths that are hypothesized to be absent can also provide useful theoretical information when statistical tests support those restrictions.
+
+- Adding more structural paths often improves goodness of fit, but doing so can reduce the strength of causal interpretation.
+
+- The two-step approach therefore draws attention to the trade-off between improving model fit and maintaining theoretically meaningful restrictions.
+
+- Another important advantage is that good fit in the measurement model cannot compensate for poor fit in the structural model, or vice versa.
+
+- In a one-step approach, acceptable overall fit can potentially hide serious problems in one component of the model.
+
+## Additional Considerations in Structural Model Interpretation
+
+### Practical Versus Statistical Significance
+
+- Anderson and Gerbing distinguish statistical significance from practical significance.
+
+- The chi-square statistic is affected by sample size.
+
+- With very large samples, statistically significant differences can occur even when the actual discrepancy between the model and the data is small.
+
+- Researchers should therefore consider practical measures of fit in addition to formal significance tests.
+
+- The normed fit index can provide additional information about how much observed covariance is explained by the model.
+
+- A researcher may sometimes prefer a more parsimonious model even when a more complex model produces a statistically significant improvement if the practical improvement is very small.
+
+### Cautions About Causal Interpretation
+
+- Structural equation modeling does not automatically prove that relationships among constructs are causal.
+
+- A model with acceptable fit is supported by the data, but it is not definitively confirmed.
+
+- Other alternative models may also fit the same data.
+
+- Temporal order alone is not sufficient evidence of causation.
+
+- Researchers should also recognize the gap between an observed indicator and the latent construct it is intended to represent because indicators contain both measurement error and possible invalidity.
+
+- Model respecification further limits the strength of causal conclusions because modifications may be influenced by characteristics of the particular sample.
+
+- Cross-validation with a separate sample would provide stronger evidence for the model.
+
+- In practice, sample-size requirements may make it difficult to divide a dataset into development and validation samples.
+
+- For these reasons, causal interpretations from structural equation models should usually be stated cautiously and conditionally.
+
+# Conclusion
+
+- Anderson and Gerbing provide practical guidance for researchers using structural equation modeling for theory testing and construct validation.
+
+- Their main contribution is the recommendation of a comprehensive two-step modeling approach.
+
+- The first step evaluates and, when necessary, respecifies the measurement model.
+
+- The second step evaluates the theoretical structural relationships after acceptable measurement has been established.
+
+- The two-step approach allows researchers to test factor loadings, determine whether an acceptable structural model is possible, and formally compare the theoretical model with alternative models.
+
+- It also allows researchers to improve the measurement model without compromising the later statistical evaluation of the structural model.
+
+- By separating measurement and structural evaluation, researchers can make clearer and more theoretically meaningful interpretations.
+
+- Structural equation modeling has substantial potential for theory development and construct validation when it is used carefully and researchers remain aware of the limitations of model fit and causal interpretation.
+
+# References
+
+Anderson, James C., and David W. Gerbing. 1988. “Structural Equation Modeling in Practice: A Review and Recommended Two-Step Approach.” *Psychological Bulletin* 103 (3): 411–423. https://doi.org/10.1037/0033-2909.103.3.411.
+
+# Appendix
+
+- [GitHub Repository](PASTE-YOUR-GITHUB-REPOSITORY-LINK-HERE)
+
+- [Published Article Notes on GitHub Pages](PASTE-YOUR-GITHUB-PAGES-LINK-HERE)
